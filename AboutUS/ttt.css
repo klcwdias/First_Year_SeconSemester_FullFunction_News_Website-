@@ -1,0 +1,222 @@
+*{
+    margin: auto;
+    padding: auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+body {
+    color: #797979;
+    background: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1,h2, h3, h4,h5, h6 {
+    color: #414141;
+}
+
+
+nav{
+    display: flex;
+    padding: inherit;
+    justify-content: space-between;
+    align-items:center;
+    
+    overflow: hidden;
+    margin-bottom:0;
+    background:rgba(4,9,30,0.5);
+    width:100%;
+    top:0;
+    position: fixed;
+    box-shadow: 4px,4px,4px;
+    z-index: 9999;
+    
+    
+    
+}
+.nav-links ul li{
+    
+    list-style:none;
+    display: inline-flex;
+    padding: 8px 12px 8px 12px;
+
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.favtext a{
+    color:#fff;
+    text-decoration: none;
+    padding-top:1px;
+    font-size: 45px;
+    margin: auto;
+    line-height: 0px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+    
+}
+.favtext {
+    color:#fff;
+    text-decoration: none;
+    padding-top:10px;
+    padding-bottom: 10px;
+    font-size: 45px;
+    line-height: 0px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    
+    
+}
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #0c4af5;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+    
+}
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+.efteam h1::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #203E32;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+    
+}
+
+.efteam h1:hover::after{
+    width: 100%
+}
+
+
+.team {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px 0;
+    
+}
+
+.team .team-item {
+    position: relative;
+    background: #ffffff;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: inset 0 0 0 0 transparent;
+    transition: ease-out 0.5s;
+    border-radius: 8px;
+}
+
+.team .team-img {
+    position: relative;
+    width: 50%;
+    overflow: hidden;
+}
+
+.team .team-img img {
+    position: relative;
+    width: 100%;
+    transition: .5s;
+}
+
+.team .team-text {
+    position: relative;
+    width: 50%;
+    padding: 0 30px;
+}
+
+.team .team-text h2 {
+    color: #223E30;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    transition: 1s;
+}
+
+.team .team-text h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    transition: 1s;
+}
+
+.team .team-text p {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.team .team-social {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.team .team-social a.btn {
+    width: 35px;
+    height: 35px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.team .team-item:hover {
+    box-shadow: inset 800px 0 0 0 #7bbd85;
+}
+
+.team .team-item:hover .team-img img {
+    transform: scale(1.2);
+}
+
+.team .team-item:hover .team-text h2,
+.team .team-item:hover .team-text h4,
+.team .team-item:hover .team-text p {
+    color: #ffffff;
+}
+
+.team .team-item:hover .team-social a.btn {
+    background: #ffffff;
+}
+
+.team .team-item:hover .team-social a.btn:hover {
+    border-color: #ffffff;
+}
+
+@media(max-width: 575.98px) {
+    .team .team-text {
+        padding: 0 15px;
+    }
+    
+    .team .team-text h2 {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .team .team-text h4 {
+        margin-bottom: 5px;
+    }
+
+    .team .team-text p {
+        font-size: 14px;
+        line-height: 18px;
+        margin-bottom: 10px;
+    }
+}

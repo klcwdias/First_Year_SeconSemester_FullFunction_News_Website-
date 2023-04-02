@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+h1,
+h2, 
+h3, 
+h4,
+h5, 
+h6 {
+    color: #414141;
+}
+
+a{
+    text-decoration: none;
+   
+}
+
+/* The Image container */
+.img-hover-zoom {
+  height: 300px; /* Modify this according to your need */
+  overflow: hidden; /* Removing this will break the effects */
+}
+
+.header{
+     min-height: 100vh;
+    width: 100%;
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(image/img2.gif);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+        
+}
+
+
+
+
+nav{
+    display: flex;
+    padding: 1% 6% 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+    
+    overflow: hidden;
+    margin:0;
+    background:rgba(4,9,30,0.5);
+    width:88%;
+    top:0;
+    position: fixed;
+    box-shadow:1px;
+    z-index: 9999;
+    
+    
+    
+}
+.nav-links ul li{
+    list-style:none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.favtext a{
+    color:#fff;
+    text-decoration: none;
+    padding-top:1px;
+    font-size: 45px;
+    margin: auto;
+    line-height: 0px;
+    font-weight: 700;
+    letter-spacing: 2px; 
+}
+
+.favtext {
+    width:20;
+    height:20%;
+}
+
+.nav-links ul li::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #0c4af5;
+    display: block;
+    margin: auto;
+    transition: 0.6s; 
+}
+
+.nav-links ul li:hover::after{
+    width: 100%
+}
+
+
+
+/*------TOP NEWS----*/
+
+.text_line1{
+    background-color: #77726D;
+    padding:2%;
+    
+}
+
+.text_line1 h1{
+    color: white;
+}
+
+.text_line2{
+    background-color: #344B2E;
+    padding:2%;
+    
+}
+
+.text_line2 h1{
+    color: white;
+}
+
+.text_line3{
+    background-color: #8C7884;
+    padding:2%;
+    
+}
+
+.text_line3 h1{
+    color: white;
+}
+
+.text_line4{
+    background-color: #CF8837;
+    padding:2%;
+    
+}
+
+.text_line4 h1{
+    color: white;
+}
+
+
+
+.parallax1 {
+  /* The image used */
+  background-image: url("image/topbg.jpg");
+    
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   box-shadow: 5px 10px #888888;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image:url("image/localbg1.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax3 {
+  /* The image used */
+  background-image: url("image/foreignbg.jpg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax4 {
+  /* The image used */
+  background-image:url("image/sportbg.jpeg");
+
+  /* Set a specific height */
+  min-height: 500px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.topnews h1::after{
+    content: '';
+    width:0%;
+    height: 2px;
+    background: #0c4af5;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+    
+}
+
+.topnews h1:hover::after{
+    width: 100%
+}
+
+.topnews{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 0px;
+    background: transparent;
+}
+
+h1{
+    
+    font-size: 36px;
+    font-weight:10px;
+}
+
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    padding-left:10%;
+    padding-right: 10%;
+    padding-bottom:3%;
+    padding-top:1%;
+    
+    
+}
+.news-col{
+    flex-basis: 31%;
+    background: #77726D;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.news-col2{
+    flex-basis: 31%;
+    background: #344A2E;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.news-col3{
+    flex-basis: 31%;
+    background: #8C7884;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+.news-col2 h3{
+    color: white;
+}
+
+.news-col4{
+    flex-basis: 31%;
+    background: #CF8837;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+
+
+.blog-meta p{
+    color: white;
+}
+
+.image-cover{
+    padding: 10px;
+}
+
+
+
+
+/* [1] The container */
+.img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow:hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+    overflow: hidden;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
+.adc{
+    color:#696969;
+}
+
+h3{
+    
+    text-align: center;
+    font-weight: 600;
+    margin:10px 0;
+}
+
+.news-col:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.news-col2:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.news-col3:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+.news-col4:hover{
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+@media(max-width:700px){
+    .row{
+        flex-direction:column;
+    }
+}
+
+.news-col .fa{
+    color:orange;
+}
+
+.news-col img{
+    width: 306px;
+    height: 220px;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    
+    border-radius: 5px;
+    align-content: center;
+}
+
+
+
+.news-col2 img{
+    width: 306px;
+    height: 220px;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    
+    border-radius: 5px;
+    align-content: center;
+}
+
+.news-col3 img{
+    width: 306px;
+    height: 220px;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    
+    border-radius: 5px;
+    align-content: center;
+}
+
+.news-col4 img{
+    width: 306px;
+    height: 220px;
+    padding-bottom: 80px;
+    padding-top: 30px;
+    
+    border-radius: 5px;
+    align-content: center;
+}
+
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #D0D3D8 ;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.hero-btn:hover{
+    border:1px solid #D0D3D8;
+    background:#D0D3D8;
+    transition: 1s;
+}
+
+.hero-btn2{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #9CB45F ;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.hero-btn2:hover{
+    border:1px solid #9CB45F;
+    background:#9CB45F;
+    transition: 1s;
+}
+
+.hero-btn3{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #6F5B66 ;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.hero-btn3:hover{
+    border:1px solid #6F5B66;
+    background:#6F5B66;
+    transition: 1s;
+}
+
+
+.hero-btn4{
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #A55522 ;
+    padding: 12px 34px;
+    font-size: 18px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.hero-btn4:hover{
+    border:1px solid #A55522;
+    background:#A55522;
+    transition: 1s;
+}
+
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+
+.sub{
+    padding: 3%;
+    background-image: url(image/photo_2022-03-19%2016.04.42.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.sub:hover{
+    box-shadow: 0 0 25px rgba(0,0,0,0.5);
+    
+}
+
+
+.footer{
+    background-color: #c5dcfa;
+    box-shadow: 5px 8px 0;
+    border-radius:10px;
+}
+
+.footer h4{
+    text-align: center;
+    
+}
+
+.footer p{
+    text-align: center;
+}
+
+
+
+
+.ico{
+    align-content: space-between;
+    text-align: center;
+}

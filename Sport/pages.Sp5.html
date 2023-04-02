@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>newspage</title>
+    <!--Style Sheets!--> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="footercss.css">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.js" defer></script>
+    
+     <!--Google Fonts!-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    
+    
+    
+    
+    <!--Libries!-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+    
+    <!--Icon Packs!-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+        <nav>
+        
+        <div class="favtext">
+        <a href="Indexx.html"> <img src="image/Hnet.com-image%20(1).png">
+            </a>
+            </div>
+        <div class="nav-links">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Top News</a></li>
+            <li><a href="">Local News</a></li>
+            <li><a href="">Foreign News</a></li>
+            <li><a href="">Sport News </a></li>
+            <li><a href=""><i class="far fa-user"></i> Login/Sign-up </a></li>
+        </ul>
+		</div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        
+        
+        <section class="topnews">
+        
+        <h1>Sports News</h1>
+        <br>
+        <section class="mainnew">
+           <div class="news-col">
+           
+           
+           <div class="image-cover">
+           
+           <img src="S10.jpg">
+               
+               <h3>MAX VERSTAPPEN SAYS FORMULA 1 DOES 'NOT NEED TO HEAL'</h3>
+           
+               </div>
+           
+           <br>
+           <p>After last year's contentious title final, world winner Max Verstappen argues F1 "does not need to heal."
+
+However, the 24-year-old believes that more front-line teams are required.
+
+Following race director Michael Masi's decision not to follow protocols around resuming the race, the Red Bull driver won the drivers' title.
+
+He also suggested Netflix's Drive to Survive documentary was "faking rivalries" in an interview with BBC Sport, and he declined to participate. <br><br>
+
+After a decision by Masi to begin the race early after a safety car, Verstappen won the final race of last season in Abu Dhabi, overtaking title challenger Lewis Hamilton's Mercedes on the penultimate lap.
+
+Masi was fired from his position as race director last month after failing to follow the rules properly. <br><br>
+
+"The sport doesn't need to heal, there are these dramatic moments which are part of the sport as well," Verstappen said.
+
+"F1 is a very tough world. I think Lewis can feel the pain a bit less if you already have seven [drivers' titles]."
+
+The Dutchman added that Formula 1 needs "more teams at the front, fighting for wins".<br><br>
+
+New car and tyre designs are being introduced for the new season, which starts this weekend in Bahrain, with the goal of allowing drivers to follow each other more closely on the track and improving the racing spectacle. <br><br>
+"Slowly we are are getting to that - hopefully these new regulations will give us that boost and we have more drivers on every team fighting. Because at the end of the day this is what we like, right?" <br><br>
+
+'Faking rivalries'
+Last year's dramatic last race, the new rules, and the growing popularity of Netflix's Drive to Survive, which explores a number of stories in teams all over the pitlane, have all helped to raise F1's visibility. <br><br>
+
+However, Verstappen is one of a few major figures in the sport who has declined to participate.
+
+"I only watched two episodes and was underwhelmed. Faking rivalries is just not my thing."
+
+Part of the new series, which premiered last week, follows Daniel Ricciardo of McLaren as he watches British teammate Lando Norris excel in a car that he can't get up to speed in. <br><br>
+
+"Lando and Daniel are two great people I know - they have really great characters and immediately at the second episode it looks like they are not very friendly to each other, and for me that's not correct and that's why I'm also not a part of it." <br><br>
+
+Despite the fact that the series is often credited with boosting the sport's appeal, especially in the United States, Verstappen says its approach does not adequately reflect what happens on the track.
+
+"At one time [it aids in attracting an audience], but the impression wears off. I believe we've passed that point, and it's now more akin to a reality program, in my opinion. <br><br>
+
+"Plus, it takes way too long in the first place." I need to concentrate on the racing and have some personal time, rather than spending another half-hour during the race weekend when they need to speak with you."
+
+Following the signing of a long-term contract, Verstappen expressed his happiness at Red Bull, saying that he and the team "truly click" and have the "same attitude." <br><br>
+
+However, the 20-time race winner expressed sympathy for Russian driver Nikita Mazepin, who was recently fired when his contract was terminated and his billionaire father's championship sponsorship was revoked.
+
+"You always have to feel sympathy for Nikita himself - everyone, regardless of background, they work very hard from a very young age to be a Formula 1 driver. <br><br>
+
+"Of course you can have backing but you still need talent to drive these cars in Formula 3 and Formula 2. You need to be competitive and he definitely was that.
+
+"At the moment it's very complicated for him, but yeah let's see hopefully in general the world can be at peace again." <br><br>
+
+</p>
+               <div class="blog-meta">
+                                    <p class="adc"><i class="far fa-user"></i>Ben King(Business reporter, BBC News)
+
+                                    <i class="far fa-calendar-alt"></i>  17-Mar-2022 
+                                    <i class="far fa-comments"></i>  5 </p>
+                                </div>
+               <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+<!-- partial:index.partial.html -->
+<section id="app">
+    <div class="container11">
+      <div class="row11">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div><!--End Comment-->
+          </div><!--End col -->
+          </div><!-- End row -->
+      <div class="row">
+        <div class="col-6">
+            <form method="post" action="">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                </form>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div><!--End Container -->
+  </section><!-- end App -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="script.js"></script>
+           
+    		</div>
+		</div>
+    </div>
+
+           </div> 
+            
+            
+        </section>
+        </section>
+
+        <div class="ms-3 row container-fluid mb-3">
+            <div class="col-xxl-3">
+                
+                <a class="link" href="">
+                    
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text fw-bold fs-3 text-center">HIDILYN DIAZ: FROM ANTI-GOVERNMENT CONSPIRACIES TO HISTORIC OLYMPIC GOLD</p>
+                    </div>
+                    <img src="s1.jpg" class="card-img-top" alt="...">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                
+                <a class="link" href="">
+                    
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text fw-bold fs-3 text-center">THE NEW GENERATION OF INDIAN FEMALE PARA-ATHLETES IS DRIVING A PARADIGM SHIFT</p>
+                    </div>
+                    <img src="s2.jpg" class="card-img-top" alt="...">
+                    </a>
+                    </div>
+            </div>
+            <div class="col-lg-3">
+                <a class="link" href="">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text fw-bold fs-3 text-center">ARSENAL 0-2 LIVERPOOL: THE REDS THROW THE GAUNTLET DOWN TO PREMIER LEAGUE LEADERS MANCHESTER CITY.</p>
+                    </div>
+                    <img src="s3.jpg" class="card-img-top" alt="...">
+                </a>
+                    </div>
+            </div>
+            
+            <div class="col-lg-3">
+                <a class="link" href="">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text fw-bold fs-3 text-center">ENGLAND IN WEST INDIES: JOE ROOT HITS 119 NOT OUT AND DAN LAWRENCE 91 AS TOURISTS TAKE COMMAND</p>
+                    </div>
+                    <img src="s4.jpg" class="card-img-top" alt="...">
+                    </a>
+                    </div>
+            </div>
+
+        </div>
+
+
+
+        
+        
+        
+        
+        
+        <section class="pageswitch">
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a href="pages.Sp1.html">1</a>
+            <a  href="pages.Sp2.html">2</a>
+            <a href="pages.Sp3.html">3</a>
+            <a href="pages.Sp4.html">4</a>
+            <a class="active" href="pages.Sp5.html">5</a>
+            <a href="pages.Sp6.html">6</a>
+            <a href="pages.Sp7.html">7</a>
+            <a href="pages.Sp8.html">8</a>
+            <a href="pages.Sp9.html">9</a>
+            <a href="pages.Sp10.html">10</a>
+            <a href="#">&raquo;</a>
+            </div>
+            
+
+        </section>
+        <br>
+        <br>
+        <br>
+        
+        <section class="footer">
+    <footer class="footerf">
+  	 <div class="containerf">
+  	 	<div class="rowf">
+  	 		<div class="footer-column">
+  	 			<h4>About Us</h4>
+  	 			<p>
+            All the worlds news to be notified and read in one place. Our mission is to give you the best and true information to read in one place.
+          </p>
+  	 		</div>
+  	 		<div class="footer-column">
+  	 			<h4>Quick Links</h4>
+  	 			<ul>
+  	 				<li><a href="#">Home</a></li>
+  	 				<li><a href="#">Top News</a></li>
+  	 				<li><a href="#">Local News</a></li>
+  	 				<li><a href="#">Foreign News</a></li>
+            <li><a href="#">Sports News</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-column">
+  	 			<h4>Legal</h4>
+  	 			<ul>
+  	 				<li><a href="privacypolicy.html">Privacy Policy</a></li>
+  	 				<li><a href="Terms.html">Terms of Service </a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-column">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+    </section>
+        
+    </body>
+</html>
+    

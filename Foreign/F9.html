@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>newspage</title>
+    <!--Style Sheets!--> 
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="footercss.css">
+    <link href="bootstrap.css" rel="stylesheet">
+    <script src="bootstrap.js" defer></script>
+    
+     <!--Google Fonts!-->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    
+    
+    
+    
+    
+    <!--Libries!-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    
+    
+    
+    <!--Icon Packs!-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+    </head>
+    
+    <body>
+        <nav>
+        
+        <div class="favtext">
+        <a href="Indexx.html"> <img src="image/Hnet.com-image%20(1).png">
+            </a>
+            </div>
+        <div class="nav-links">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Top News</a></li>
+            <li><a href="">Local News</a></li>
+            <li><a href="">Foreign News</a></li>
+            <li><a href="">Sport News </a></li>
+            <li><a href="Login_and_signup/login.html"><i class="far fa-user"></i> Login/Sign-up </a></li>
+        </ul>
+		</div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        
+        
+        <section class="topnews">
+        
+        <h1>Top news</h1>
+        <br>
+        <section class="mainnew">
+           <div class="news-col">
+           
+           
+           <div class="image-cover">
+           
+           <img src="F9.png">
+               
+               <h3>KARNATAKA BANDH: SHOULD COURTS DECIDE IF HIJAB IS ESSENTIAL IN ISLAM?</h3>
+           
+               </div>
+           
+           <br>
+           <p>The hijab has "something to do with culture but absolutely not with religion," according to a landmark Indian court judgement issued on Tuesday.
+On the basis that wearing the headscarf is not "essential" to Islam, a three-judge court in the southern state of Karnataka maintained a government ban on the headscarf in schools and universities.
+The decision, which came after a polarizing debate over the hijab, has been appealed to the Supreme Court; an appeal against the prohibition was submitted just hours after the high court decision.
+The so-called "essentiality test," which is used to establish if something is essential to a faith and is increasingly being employed by Indian courts to resolve religious conflicts, is at the heart of the decision.
+Is wearing the hijab essential to Islam?
+This was the central question of the hearing, and the 129-page judgement was based on it.<br><br>
+The petitioners were a group of Muslim females who were denied the right to wear the hijab in class at a government college in Karnataka's Udupi district. They complained, but the college refused to budge, and the case went to court.
+The girls claimed that prohibiting the hijab was not only discriminatory, but also violated their freedom of expression and religion. They said that covering their heads was a requirement of their faith.
+Indian women are fighting for the right to wear the hijab in college.
+'Muslim women are not oppressed because they wear the hijab.'
+The government argued that the petitioners had the burden of proving that the headscarf was a "essential" religious practice.
+
+The court ruled that the petitioners had "miserably failed" to show this after 11 days of heated discussions and adjournments. <br><br>
+
+"It is not that if the practice of wearing hijab is not adhered to, people who do not wear hijab become sinners, Islam loses its glory, and it ceases to be a religion," it ruled, citing verses from the Koran.
+As a result, the state has the authority to prescribe a uniform that does not include the hijab - the students' objections were dismissed, with the requirement being a "reasonable restriction" on their constitutional rights. <br><br>
+
+"What is not religiously proclaimed necessary cannot therefore be made a quintessential part of the faith through public agitation or heated legal arguments," the judgment stated.
+
+However, constitutional experts and legal scholars argue that the court should not make this decision. "You're getting into theological territory that lawyers and judges aren't familiar with," says Rebecca John, a senior Supreme Court lawyer.
+A question of choice
+The Supreme Court of India abolished instant divorce in Islam in 2017, ruling that it was not a fundamental aspect of the faith and so had no legal protection. In a controversial land dispute between Hindus and Muslims in 1994, the Supreme Court ruled that a mosque was not "necessary" to practicing Islam because namaz, or prayers, could be given anywhere. As a result, it was decided that the property surrounding the mosque may be donated to Hindus. <br><br>
+
+In 2018, the court utilized the criteria once more to allow Hindu women of all ages to visit the Sabarimala temple, which had previously only allowed women of particular ages to visit. The restriction was not deemed a "essential religious practice" by the court.
+In 2016, the Kerala high court analyzed the Koran and concluded that it commanded head covering as a religious duty and hence regarded it important to Islam. It was hearing a petition from students who were told they couldn't wear the hijab to a medical exam because it would allow them to cheat.
+The petitioners in Karnataka had cited this decision, but the court dismissed their claim this time. <br><br>
+
+
+</p>
+               <div class="blog-meta">
+                                    <p class="adc"><i class="far fa-user"></i>Ben King(Business reporter, BBC News)
+
+                                    <i class="far fa-calendar-alt"></i>  17-Mar-2022 
+                                    <i class="far fa-comments"></i>  5 </p>
+                                </div>
+               <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+              
+<!-- partial:index.partial.html -->
+<section id="app">
+    <div class="container11">
+      <div class="row11">
+        <div class="col-6">
+          <div class="comment">
+        <p v-for="items in item" v-text="items"></p>
+          </div><!--End Comment-->
+          </div><!--End col -->
+          </div><!-- End row -->
+      <div class="row">
+        <div class="col-6">
+            <form method="post" action="">
+      <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+          <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                </form>
+        </div><!-- End col -->
+      </div><!--End Row -->
+    </div><!--End Container -->
+  </section><!-- end App -->
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<script  src="script.js"></script>
+           
+    		</div>
+		</div>
+    </div>
+
+           </div> 
+            
+            
+        </section>
+        </section>
+
+        <div class="ms-3 row container-fluid mb-3">
+            <div class="col-xxl-3">
+                
+                <a class="link" href="F1.html">
+                    
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text fw-bold fs-3 text-center">UKRAINE TO BE BUILT BACK UP USING RUSSIAN MONEY, SAYS BANK CHIEF</p>
+                    </div>
+                    <img src="t6.jpg" class="card-img-top" alt="...">
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                
+                <a class="link" href="F2.html">
+                    
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text fw-bold fs-3 text-center">PUTIN BRANDED A ‘WAR CRIMINAL’ BY BIDEN IN UKRAINE CONFLICT</p>
+                    </div>
+                    <img src="t7.png" class="card-img-top" alt="...">
+                    </a>
+                    </div>
+            </div>
+            <div class="col-lg-3">
+                <a class="link" href="F3.html">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text fw-bold fs-3 text-center">TEXAS BUS COLLISION KILLS AT LEAST NINE INVOLVING STUDENT ATHLETES</p>
+                    </div>
+                    <img src="t8.jpg" class="card-img-top" alt="...">
+                </a>
+                    </div>
+            </div>
+            
+            <div class="col-lg-3">
+                <a class="link" href="F4.html">
+                <div class="card" style="width: 18rem;">
+                    <div class="card-body">
+                        <p class="card-text fw-bold fs-3 text-center">PENSIONER DETAINED AFTER MUTILATED BODY FOUND</p>
+                    </div>
+                    <img src="t9.png" class="card-img-top" alt="...">
+                    </a>
+                    </div>
+            </div>
+
+        </div>
+
+
+
+        
+        
+        
+        
+        
+        <section class="pageswitch">
+        <div class="pagination">
+            <a href="#">&laquo;</a>
+            <a  href="F1.html">1</a>
+            <a  href="F2.html">2</a>
+            <a href="F3.html">3</a>
+            <a href="F4.html">4</a>
+            <a href="F5.html">5</a>
+            <a href="F6.html">6</a>
+            <a href="F7.html">7</a>
+            <a href="F8.html">8</a>
+            <a class="active" href="F9.html">9</a>
+            <a href="F10.html">10</a>
+            <a href="#">&raquo;</a>
+            </div>
+            
+
+        </section>
+        <br>
+        <br>
+        <br>
+        
+        <section class="footer">
+    <footer class="footerf">
+  	 <div class="containerf">
+  	 	<div class="rowf">
+  	 		<div class="footer-column">
+  	 			<h4>About Us</h4>
+  	 			<p>
+                        All the worlds news to be notified and read in one place. Our mission is to give you the best and true information to read in one place.
+          </p>
+  	 		</div>
+  	 		<div class="footer-column">
+  	 			<h4>Quick Links</h4>
+  	 			<ul>
+  	 				<li><a href="#">Home</a></li>
+  	 				<li><a href="#">Top News</a></li>
+  	 				<li><a href="#">Local News</a></li>
+  	 				<li><a href="#">Foreign News</a></li>
+            <li><a href="#">Sports News</a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-column">
+  	 			<h4>online shop</h4>
+  	 			<ul>
+  	 				<li><a href="privacypolicy.html">Privacy Policy</a></li>
+  	 				<li><a href="Terms.html">Terms of Service </a></li>
+  	 			</ul>
+  	 		</div>
+  	 		<div class="footer-column">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+    </section>
+        
+    </body>
+</html>
+    
